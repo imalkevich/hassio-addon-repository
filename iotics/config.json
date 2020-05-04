@@ -1,0 +1,24 @@
+{
+  "name": "Iotics Api",
+  "version": "0.0.1",
+  "slug": "iotics-api",
+  "description": "Iotics Api",
+  "webui": "http://[HOST]:[PORT:8095]/",
+  "arch": [ "amd64" ],
+  "image": "imalkevich/iotics",
+  "url": "https://github.com/Po0wnage/iotics",
+  "startup": "application",
+  "boot": "auto",
+  "homeassistant_api": true,
+  "apparmor": true,
+  "timeout": 60,
+  "ports": {
+    "8095/tcp": 8095
+  },
+  "ports_description": {
+    "8095/tcp": "Web interface (Admin is located at /admin)"
+  },
+  "map": [ "ssl" ],
+  "options": {},
+  "schema": {}
+}
